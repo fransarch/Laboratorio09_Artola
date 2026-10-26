@@ -51,3 +51,10 @@ python -m pytest
 ```bash
 ruff check .
 ```
+## Estado de las pruebas
+
+El proyecto cuenta con 8 pruebas automatizadas que verifican la
+estructura de los agentes, el cálculo del presupuesto y la revisión
+de riesgos. Todas las pruebas pasan correctamente.
+
+La revisión de calidad del código con Ruff también finaliza sin errores.
