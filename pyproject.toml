@@ -1,0 +1,33 @@
+
+[tool.poetry]
+name = "laboratorio09-artola"
+version = "0.1.0"
+description = "Sistema multiagente de viajes con Google ADK"
+authors = ["Estudiante UCV"]
+readme = "README.md"
+packages = [{ include = "travel_assistant" }]
+
+[tool.poetry.dependencies]
+python = ">=3.13,<3.14"
+google-adk = "*"
+python-dotenv = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pytest-cov = "*"
+ruff = "*"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
